@@ -1,0 +1,82 @@
+[
+ {
+  "symbol": "GOOGL",
+  "name": "Alphabet Inc. (Google)",
+  "price": 136.00,
+  "change": 0.47,
+  "volume": 3183384,
+  "status": "🟢 POSITIVE"
+ },
+ {
+  "symbol": "AMZN",
+  "name": "Amazon.com Inc.",
+  "price": 136.00,
+  "change": 0.47,
+  "volume": 3183384,
+  "status": "🟢 POSITIVE"
+ },
+ {
+  "symbol": "NVDA",
+  "name": "NVIDIA Corporation",
+  "price": 436.00,
+  "change": 0.47,
+  "volume": 3183384,
+  "status": "🟢 POSITIVE"
+ },
+ {
+  "symbol": "META",
+  "name": "Meta Platforms Inc.",
+  "price": 136.00,
+  "change": 0.47,
+  "volume": 3183384,
+  "status": "🟢 POSITIVE"
+ },
+ {
+  "symbol": "AMD",
+  "name": "Advanced Micro Devices",
+  "price": 136.00,
+  "change": 0.47,
+  "volume": 3183384,
+  "status": "🟢 POSITIVE"
+ },
+ {
+  "symbol": "AAPL",
+  "name": "Apple Inc.",
+  "price": 175.00,
+  "change": 0.22,
+  "volume": 5150960,
+  "status": "🟢 POSITIVE"
+ },
+ {
+  "symbol": "MSFT",
+  "name": "Microsoft Corporation",
+  "price": 136.00,
+  "change": -0.40,
+  "volume": 1553437,
+  "status": "🟡 WATCH"
+ },
+ {
+  "symbol": "NFLX",
+  "name": "Netflix Inc.",
+  "price": 138.00,
+  "change": -1.28,
+  "volume": 2448693,
+  "status": "📉 BEARISH"
+ },
+ {
+  "symbol": "INTC",
+  "name": "Intel Corporation",
+  "price": 138.00,
+  "change": -1.28,
+  "volume": 2448693,
+  "status": "📉 BEARISH"
+ },
+ {
+  "symbol": "TSLA",
+  "name": "Tesla, Inc.",
+  "price": 261.00,
+  "change": -1.40,
+  "volume": 1553437,
+  "status": "📉 BEARISH"
+ }
+]
