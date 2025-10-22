@@ -128,8 +128,6 @@ void show_menu() {
     printf("├─────────────────────────────────────────┤\n");
     printf("│ 1. 🔄 Refresh Stock Data                │\n");
     printf("│ 2. 📊 View Detailed Analysis            │\n");
-    printf("│ 3. 💾 Save Data to File                 │\n");
-    printf("│ 4. 🌐 Generate Web Dashboard            │\n");
     printf("│ 5. ❌ Exit                              │\n");
     printf("└─────────────────────────────────────────┘\n");
     printf("Enter your choice (1-5): ");
@@ -223,32 +221,32 @@ int main() {
                 }
                 break;
                 
-            case 3:
-                if(!data_loaded) {
-                    printf("⚠️  Please fetch stock data first (Option 1).\n\n");
-                } else {
-                    print_loading_animation("💾 Saving stock data to file");
-                    if(save_stocks_to_file(stocks, STOCK_COUNT, "stock_data.txt")) {
-                        printf("✅ Data saved successfully to 'stock_data.txt'\n\n");
-                    } else {
-                        printf("❌ Failed to save data to file.\n\n");
-                    }
-                }
-                break;
+            // case 3:
+            //     if(!data_loaded) {
+            //         printf("⚠️  Please fetch stock data first (Option 1).\n\n");
+            //     } else {
+            //         print_loading_animation("💾 Saving stock data to file");
+            //         if(save_stocks_to_file(stocks, STOCK_COUNT, "stock_data.txt")) {
+            //             printf("✅ Data saved successfully to 'stock_data.txt'\n\n");
+            //         } else {
+            //             printf("❌ Failed to save data to file.\n\n");
+            //         }
+            //     }
+            //     break;
                 
-            case 4:
-                if(!data_loaded) {
-                    printf("⚠️  Please fetch stock data first (Option 1).\n\n");
-                } else {
-                    print_loading_animation("🌐 Generating web dashboard");
-                    if(generate_web_dashboard(stocks, STOCK_COUNT)) {
-                        printf("✅ Web dashboard generated successfully!\n");
-                        printf("🌐 Open 'web/index.html' in your browser to view.\n\n");
-                    } else {
-                        printf("❌ Failed to generate web dashboard.\n\n");
-                    }
-                }
-                break;
+            // case 4:
+            //     if(!data_loaded) {
+            //         printf("⚠️  Please fetch stock data first (Option 1).\n\n");
+            //     } else {
+            //         print_loading_animation("🌐 Generating web dashboard");
+            //         if(generate_web_dashboard(stocks, STOCK_COUNT)) {
+            //             printf("✅ Web dashboard generated successfully!\n");
+            //             printf("🌐 Open 'web/index.html' in your browser to view.\n\n");
+            //         } else {
+            //             printf("❌ Failed to generate web dashboard.\n\n");
+            //         }
+            //     }
+            //     break;
                 
             case 5:
                 printf("\n👋 Thank you for using Smart Stock Tracker!\n");

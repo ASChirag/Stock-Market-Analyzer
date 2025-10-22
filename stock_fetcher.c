@@ -351,7 +351,7 @@ void format_percentage(double percentage, char* buffer, size_t size) {
 
 // Write all stocks to JSON file (stocks.json)
 int write_all_stocks_json(Stock stocks[], int count) {
-    FILE* fp = fopen("stocks.json", "w");
+    FILE* fp = fopen("/mnt/c/Users/LENOVO/OneDrive/Desktop/SmartStockTrackerUpdate/stock_market/public/stock.json", "w");
     if (!fp) return 0;
 
     fprintf(fp, "[\n");
@@ -380,7 +380,7 @@ int write_all_stocks_json(Stock stocks[], int count) {
 int write_best_stock_json(Stock stocks[], int count) {
     Stock* best = find_best_performing_stock(stocks, count);
     if (!best) return 0;
-    FILE* fp = fopen("stock_of_the_day.json", "w");
+    FILE* fp = fopen("/mnt/c/Users/LENOVO/OneDrive/Desktop/SmartStockTrackerUpdate/stock_market/public/stock_of_the_day.json", "w");
     if (!fp) return 0;
 
     fprintf(fp, "{\n");
@@ -403,7 +403,7 @@ int write_trending_json(Stock stocks[], int count) {
     memcpy(sorted, stocks, count * sizeof(Stock));
     qsort(sorted, count, sizeof(Stock), compare_stock_change);
 
-    FILE* fp = fopen("trending_now.json", "w");
+    FILE* fp = fopen("/mnt/c/Users/LENOVO/OneDrive/Desktop/SmartStockTrackerUpdate/stock_market/public/trending_now.json", "w");
     if (!fp) return 0;
 
     fprintf(fp, "[\n");

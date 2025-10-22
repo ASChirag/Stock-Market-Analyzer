@@ -304,11 +304,11 @@ int compare_stock_change(const void* a, const void* b);
 #define STRONG_SELL_THRESHOLD -3.0  // < -3% loss
 
 // Web interface configuration
-#define WEB_DIRECTORY "web"
-#define JSON_DATA_FILE "web/stock_data.json"
-#define HTML_FILE "web/index.html"
-#define CSS_FILE "web/style.css"
-#define JS_FILE "web/app.js"
+// #define WEB_DIRECTORY "web"
+// #define JSON_DATA_FILE "web/stock_data.json"
+// #define HTML_FILE "web/index.html"
+// #define CSS_FILE "web/style.css"
+// #define JS_FILE "web/app.js"
 
 // File paths
 #define LOG_FILE "trading_log.txt"
